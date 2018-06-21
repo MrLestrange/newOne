@@ -1,10 +1,13 @@
 <html>
-  <title>
-    First Thing
-  </title>
-  
   <head>
-        <script>
+    <style>
+    body{
+      background-color:green;
+      color:#fff;
+      text-align:center;
+    }
+  </style>
+  <script>
       window.onload = function() { 
         //<!-- Deep link URL for existing users with app already installed on their device --> 
         var url_string = window.location.href; 
@@ -13,18 +16,13 @@
         alert(record_id);
         window.location = 'salesforce1://sObject/'+record_id+'/view';
     }
-    </script> 
+    </script>
+    <title>
+      First Thing
+    </title>
   </head>
     
   <body>
     <h1>Test World destroy</h1>
   </body>
-  
-  <style>
-    body{
-      background-color:green;
-      color:#fff;
-      text-align:center;
-    }
-  </style>
 </html>
