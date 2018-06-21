@@ -16,7 +16,7 @@
         var url = new URL(url_string); 
         var record_id = url.searchParams.get("scanned_data");
         alert(record_id);
-        window.location = 'salesforce1://sObject/'+record_id+'/view';
+        window.location = 'salesforce1://apex/QRScanPage';
     }
     </script>
     <title>
