@@ -9,7 +9,8 @@
         //<!-- Deep link URL for existing users with app already installed on their device --> 
         var url_string = window.location.href; 
         var url = new URL(url_string); 
-        var record_id = url.searchParams.get("scanned_data"); 
+        var record_id = url.searchParams.get("scanned_data");
+        alert(record_id);
         window.location = 'salesforce1://sObject/'+record_id+'/view';
     }
     </script> 
