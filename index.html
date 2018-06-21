@@ -1,17 +1,30 @@
-
 <html>
-  <title>
-    First Thing
-  </title>
-  
-  <body>
-    <h1>Test World</h1>
-  </body>
-  
-  <style>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0" /> 
+    <style>
     body{
-      background-color:red;
+      background-color:green;
       color:#fff;
       text-align:center;
+    }
   </style>
+  <script>
+      window.onload = function() { 
+        //<!-- Deep link URL for existing users with app already installed on their device --> 
+        var url_string = window.location.href; 
+        var url = new URL(url_string); 
+        var record_id = url.searchParams.get("scanned_data");
+        alert(record_id);
+        window.location = 'salesforce1://sObject/'+record_id+'/view';
+    }
+    </script>
+    <title>
+      First Thing
+    </title>
+  </head>
+    
+  <body>
+    <h1>Test World destroy</h1>
+  </body>
 </html>
