@@ -15,7 +15,9 @@
         var url_string = window.location.href; 
         var url = new URL(url_string); 
         var record_id = url.searchParams.get("scanned_data");
+        var taskid = url.searchParams.get("recordid");
         alert(record_id);
+        alert(taskid);
         window.location = 'https://valueretaildevtrail-dev-ed--c.eu12.visual.force.com/apex/QRScanPage';
     }
     </script>
