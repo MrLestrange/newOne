@@ -15,8 +15,10 @@
         var url_string = window.location.href; 
         var url = new URL(url_string); 
         var record_id = url.searchParams.get("scanned_data");
+        var task_id = url.searchParams.get("taskid");
         alert(record_id);
-        window.location = 'https://valueretaildevtrail-dev-ed--c.eu12.visual.force.com/apex/QRScanPage';
+        alert(task_id);
+        window.location = 'https://valueretaildevtrail-dev-ed--c.eu12.visual.force.com/apex/QRScanPage?recordid=' + task_id + '&fieldValue=' + record_id;
     }
     </script>
     <title>
